@@ -49,11 +49,11 @@ int main()
       board[row][column]=turn;
     if (turn == 'X')
     {
-      turn == 'O';
+      turn = 'O';
     }
     else
     {
-      turn == 'X';
+      turn = 'X';
     }
     }
     //1-A.  Assign the board location of row and column to the value of turn
@@ -75,7 +75,7 @@ int main()
     {
         for (int c = 0; c < COLUMNS; c++)
         {
-            cout<<board[row][column]<<" ";
+            cout<<board[r][c]<<" ";
         }
           cout<<endl;
     }
