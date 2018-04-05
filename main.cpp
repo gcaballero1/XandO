@@ -79,6 +79,37 @@ int main()
         }
           cout<<endl;
     }
+    //Horizontal
+    if ( (board[0][0]=='X' && board[0][1]=='X' && board[0][2]=='X') || (board [1][0]=='X' && board[1][1]=='X' && board[1][2]=='X') || (board[2][0]=='X' && board[2][1]=='X' && board[2][2]=='X'))
+    {
+            cout<<"Winner is X\n";
+            playing=false;
+    }       //vertical
+    else if ( (board[0][0]=='X' && board[1][0]=='X' && board[2][0]=='X') || (board [0][1]=='X' && board[1][1]=='X' && board[2][1]=='X') || (board[0][2]=='X' && board[1][2]=='X' && board[2][2]=='X') )
+    {
+            cout<<"Winner is X\n";
+            playing=false;
+    }       //diagonal
+    else if ( (board[0][0]=='X' && board[1][1]=='X' && board[2][2]=='X') || (board[2][0]=='X' && board[1][1]=='X' && board[0][2]=='X') )
+    {
+            cout<<"Winner is X\n";
+            playing=false;
+    }       
+    else if ( (board[0][0]=='O' && board[0][1]=='O' && board[0][2]=='O') || (board [1][0]=='O' && board[1][1]=='O' && board[1][2]=='O') || (board[2][0]=='O' && board[2][1]=='O' && board[2][2]=='O') )
+    {
+            cout<<"Winner is O\n";
+            playing=false;
+    }       //vertical
+    else if ( (board[0][0]=='O' && board[1][0]=='O' && board[2][0]=='O') || (board [0][1]=='O' && board[1][1]=='O' && board[2][1]=='O') || (board[0][2]=='O'&& board[1][2]=='O' && board[2][2]=='O') )
+    {
+            cout<<"Winner is O\n";
+            playing=false;
+    }       //diagonal
+    else if ( (board[0][0]=='O' && board[1][1]=='O' && board[2][2]=='O') || (board[2][0]=='O' && board[1][1]=='O' && board[0][2]=='O') )
+    {
+            cout<<"Winner is O\n";
+            playing=false;
+    }
     
   }while( playing );
 
